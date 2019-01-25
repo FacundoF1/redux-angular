@@ -1,20 +1,31 @@
-<div class="row">
-  <div class="col">
-    <h1> Contador </h1>
-    <h2> {{ contador }} </h2>
+<div class="container">
+<div class="jumbotron">
+  <h1 class="display-4 text-center"><img src="favicon.ico" alt=""> Angular 7 / Redux / Bootstrap 4 </h1>
+  <br>
+  <p class="lead">Aplicación en angular con el patrón redux, creación de multiples componentes manejando el estado de la aplicación.</p>
+  <hr class="my-4">
+  <div class="row text-center">
+      <div class="col">
+        <h1> Componente Contador Padre</h1>
+        <h2> {{ contador }} </h2>
+      </div>
+    </div>
+  
+    <div class="row text-center">
+      <div class="col">
+        <button class="btn btn-primary" (click)="incrementar()">INCREMENTAR</button>
+        <button class="btn btn-info" (click)="decrementar()">DECREMENTAR</button>
+      </div>
+    </div>
+  
+    <hr>
+    <div class="row text-center">
+      <div class="col">
+        <app-hijo></app-hijo>
+      </div>
+    </div>
+    <div class="footer">
+        <p class="text-center">Creado por: <i>Facundo Ferrari</i> :: Fecha: Enero 2019! :: Company: Yugoo! <a href="https://yugoo.com.ar/"></a> </p>
+      </div>
   </div>
-</div>
-
-<div class="row text-center">
-  <div class="col">
-    <button class="btn btn-primary" (click)="incrementar()">INCREMENTAR</button>
-    <button class="btn btn-info" (click)="decrementar()">DECREMENTAR</button>
-  </div>
-</div>
-
-<hr>
-<div class="row">
-  <div class="col">
-    <app-hijo></app-hijo>
-  </div>
-</div>
+</div> 

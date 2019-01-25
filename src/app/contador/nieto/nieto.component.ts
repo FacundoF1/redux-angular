@@ -9,7 +9,10 @@ import { ResetAction } from '../contador.actions';
   styles: []
 })
 export class NietoComponent implements OnInit {
-  constructor(private store: Store<AppState>) { }
+  contador;
+  constructor(private store: Store<AppState>) {
+    this.store.select('contador').subscribe( state => this.contador=state );
+  }
 
   ngOnInit() {
   }
